@@ -7,13 +7,15 @@ fun main(){
 
     humanbeing.speak("Dollars before Oxygen")
 
-    humanbeing.birthday(2)
+    humanbeing.birthday(1)
     var newAge = humanbeing.age
     println(newAge)
 
     val accountCreation = User("Esther", "Mwangi", "mwangiesther@gmail.com", "0701378907", "Yaaay#4")
-    println(accountCreation.email)
-    println(accountCreation.phoneNumber)
+    var mail = accountCreation.email
+    println(mail)
+    var number = accountCreation.phoneNumber
+    println(number)
 
 }
 class Human(var name:String, var age:Int, var weight:Int){
@@ -27,8 +29,8 @@ class Human(var name:String, var age:Int, var weight:Int){
         println(speech)
     }
 
-    fun birthday(birthdate:Int){
-        age+= birthdate
+    fun birthday(ageInc:Int){
+        age+= ageInc
     }
 
 }
